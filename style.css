@@ -1,0 +1,126 @@
+
+/* Basic colours and font for the whole website */
+:root {
+    --main-color: #14213d;
+    --second-color: #1d3557;
+    --accent-color: #4ea8de;
+    --background-color: #f1f5f9;
+    --text-color: #222222;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Website heading */
+header {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Navigation links */
+nav {
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Main content area */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+    color: var(--second-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: var(--main-color);
+}
+
+/* Links inside the content */
+.content a {
+    color: #1261a0;
+}
+
+.content a:hover {
+    color: #e76f51;
+}
+
+/* Student ID image */
+.student-id {
+    width: 220px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid var(--second-color);
+    border-radius: 5px;
+}
+
+/* Quote section */
+blockquote {
+    background-color: var(--background-color);
+    border-left: 4px solid var(--accent-color);
+    padding: 15px;
+    margin-left: 0;
+}
+
+/* Bottom of each page */
+footer {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+/* Layout for smaller screens */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    .content {
+        padding: 15px;
+    }
+}
